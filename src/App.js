@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router";
+import Homepage from "./components/Homepage/Homepage";
+import { LaunchList } from "./components/LaunchList/LaunchList";
+import { RocketDetails } from "./components/RocketDetails/RocketDetails";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+      </Routes>
+      <div className="container">
+        <Routes>
+          <Route path="/launchlist" element={<LaunchList />} />
+          <Route path="/:rocketId" element={<RocketDetails />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 

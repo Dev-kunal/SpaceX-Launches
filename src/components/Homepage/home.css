@@ -1,0 +1,44 @@
+.homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 99vw;
+  overflow-y: hidden;
+}
+.rock8 {
+  width: 20rem;
+  height: auto;
+  transform: rotate(70deg);
+}
+.btn-secondary {
+  padding: 0.7rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  min-width: 12rem;
+  font-family: inherit;
+  background-color: transparent;
+  color: white;
+}
+.btn-secondary:hover {
+  color: black;
+  background-color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .rock8 {
+    width: 10rem;
+    height: auto;
+    transform: rotate(70deg);
+  }
+  .btn-secondary {
+    font-size: 1rem;
+    min-width: 10rem;
+    margin-top: 2rem;
+  }
+}

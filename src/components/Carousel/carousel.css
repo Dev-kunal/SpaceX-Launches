@@ -1,0 +1,41 @@
+.btn {
+  background: transparent;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.btn-carousel {
+  background: rgba(255, 255, 255, 0.404);
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: black;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.slide {
+  min-width: 22rem;
+  max-width: 35rem;
+  height: 25rem;
+}
+.next {
+  position: absolute;
+  right: 0.6rem;
+  top: 50%;
+}
+.previous {
+  position: absolute;
+  left: 0.6rem;
+  top: 50%;
+}
+.carousel {
+  position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  .slide {
+    max-width: 100%;
+  }
+}
