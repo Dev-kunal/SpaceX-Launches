@@ -6,7 +6,7 @@
 .details-data {
   display: flex;
   flex-direction: column;
-  min-width: 22rem;
+  min-width: 18rem;
   max-width: 24rem;
   padding: 1rem;
 }
@@ -39,11 +39,5 @@
   .details {
     flex-direction: column;
     justify-content: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .details {
-    flex-direction: column;
   }
 }

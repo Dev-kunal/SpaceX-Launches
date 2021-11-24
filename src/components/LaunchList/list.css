@@ -13,12 +13,13 @@ td {
   padding: 1rem;
   text-align: left;
 }
-
 .rocket {
   text-decoration: underline;
   cursor: pointer;
 }
-
+.loading {
+  margin: 1rem auto;
+}
 @media screen and (max-width: 769px) {
   td {
     min-width: 5rem;

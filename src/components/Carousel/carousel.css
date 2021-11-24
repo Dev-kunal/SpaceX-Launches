@@ -16,7 +16,7 @@
 }
 
 .slide {
-  min-width: 22rem;
+  min-width: 35rem;
   max-width: 35rem;
   height: 25rem;
 }
@@ -37,5 +37,6 @@
 @media screen and (max-width: 480px) {
   .slide {
     max-width: 100%;
+    min-width: 100%;
   }
 }
