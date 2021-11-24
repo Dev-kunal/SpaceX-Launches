@@ -47,6 +47,14 @@ export const RocketDetails = () => {
                     </div>
                     <div className='detail-row'>
                         {' '}
+                        <span className='title'>Mass</span>  {rocket.mass.kg} kg
+                    </div>
+                    <div className='detail-row'>
+                        {' '}
+                        <span className='title'>Height</span>  {rocket.height.feet} feet
+                    </div>
+                    <div className='detail-row'>
+                        {' '}
                         <span className='title'>Description</span>  {rocket.description}
                     </div>
                     <a

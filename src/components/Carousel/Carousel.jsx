@@ -21,10 +21,10 @@ function Carousel({ images }) {
         <div className="carousel">
             <img src={images[currentSlide]} className="slide" alt="slide" />
             <button onClick={prevSlide} className="previous btn">
-                <i class="fas fa-chevron-left btn-carousel"></i>
+                <i className="fas fa-chevron-left btn-carousel"></i>
             </button>
             <button onClick={nextSlide} className="next btn">
-                <i class="fas fa-chevron-right btn-carousel"></i>
+                <i className="fas fa-chevron-right btn-carousel"></i>
             </button>
 
         </div>
