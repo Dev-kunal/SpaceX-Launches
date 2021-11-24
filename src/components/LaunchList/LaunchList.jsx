@@ -19,9 +19,6 @@ export const LaunchList = () => {
         setLauncehs((oldData) => [...oldData, ...response.data]);
         setLoading(false);
     };
-    const getRocketDetails = (id) => {
-        navigate(`/${id}`);
-    };
 
     useEffect(() => {
         if (offset < 100) {
@@ -83,7 +80,7 @@ export const LaunchList = () => {
                                             <td>{mission_name}</td>
                                             <td
                                                 className='rocket'
-                                                onClick={() => getRocketDetails(rocket_id)}
+                                                onClick={() => navigate(`/${rocket_id}`)}
                                             >
                                                 {rocket_id}
                                             </td>
@@ -98,7 +95,7 @@ export const LaunchList = () => {
                                             <td>{mission_name}</td>
                                             <td
                                                 className='rocket'
-                                                onClick={() => getRocketDetails(rocket_id)}
+                                                onClick={() => navigate(`/${rocket_id}`)}
                                             >
                                                 {rocket_id}
                                             </td>
